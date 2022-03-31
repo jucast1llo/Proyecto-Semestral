@@ -55,29 +55,19 @@ nav > a:hover{
 
 /* la posicion del baner curvo */
 
-header .textos-header{
+footer{
+    padding: 300px 0 500px 0;
+    margin: auto;
+    overflow: hidden;
+    color: #fff;
+    text-decoration:none;
+
+}
+
+.contenedor-footer{
     display: flex;
-    height: 430px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+
 }
-
-/* posicion texto menu */
-
-.textos-header h1{
-    font-size: 100px;
-    color: #fff;
-}
-
-/* tamaño y color primer menu */
-
-.textos-header h2{
-    font-size: 30px;
-    font-weight: 300;
-    color: #fff;
-}
-
-/* ltamaño y color submenu */
