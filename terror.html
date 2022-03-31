@@ -8,32 +8,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos_terror.css">
+    <link rel="stylesheet" href="css/estilosterror.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <nav> <!-- en los nav utilizamos los href para direccionar las subpaginas  -->
+        <nav> <!-- URL -->
             <a href="menu.html">Inicio</a>  
-            <a href="accion.html">Accion</a>
             <a href="drama.html">Drama</a>
+            <a href="terror.html">Terror</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
-        <section class="textos-menu">
+        <section class="textos-header">
         <h1>Terror</h1>
     </section>
-    <div class="colorfondo" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-            style="height: 100%; width: 100%;">
-            <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke: none; fill: #fff;"></path>
-        </svg></div>        
-          
+    <div class="wave" style="height: 150px; overflow: hidden;" >  <!-- SCRIPT DE BANNER   -->
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" 
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C163.37,263.98 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
+        style="stroke: none; fill: #fff;"></path></svg>
+    </div>
 </header>
 <main>
 </div>
 <section>
 <div class="contenedor">
     <h2 class="titulo">Peliculas de Terror</h2>
-    <div class="centrado">
+    <div class="contenedor">
             <img src="https://www.themoviedb.org/t/p/original/1lw2RCPrW0NIDbhcnuknwey6Zww.jpg" alt="">
             <h1>Ruega por nosotros</h3>
             <p>Fecha de Estreno: 31 de Marzo de 2020 </p>
@@ -43,7 +44,7 @@
             <p>Temáticas: Religión </p>
             <p>Edad recomendada: +16 </p>
     </div>  
-    <div class="centrado">
+    <div class="contenedor">
         <img src="data:image/jpeg;base64,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" alt="">
         <h1>El conjuro</h3>
         <p>Fecha de Estreno: </p>
@@ -53,7 +54,7 @@
         <p>Temáticas:  </p>
         <p>Edad recomendada: +16 </p>
     </div>  
-    <div class="centrado">
+    <div class="contenedor">
     <img src="" alt="">
     <h1></h3>
     <p>Fecha de Estreno: </p>

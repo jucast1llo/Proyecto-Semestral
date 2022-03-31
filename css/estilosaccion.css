@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'open sans';
-}
- /* para agregar las fuentes open sans*/
+body{
+    font-family:'Times New Roman', Times, serif
+} /* tipo de letra */
+
+.contenedor{
+    padding: 60px 0; 
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}/* arriba y abajo una separacion de 60 pixeles y maximo de pixeles 1000, overflow si algo se sale del centro del margen que lo esconda*/
 
 header {
     width: 100%;
@@ -20,13 +27,12 @@ header {
     position: relative;
 }
 
- /* en header encabezamiento, utilizamos un script degradado de color de fondo, junto con la imagen de portada */
-
 nav{
     text-align: right;
     padding: 30px 50px 0 0;
 }
- /* esta etiqueta nav sirve para el uso externo de enlaces*/
+
+/* esto mueve el texto superior de los links */
 
 nav > a{
     color:#fff;
@@ -34,8 +40,22 @@ nav > a{
     text-decoration: none;
     margin-right: 10px;
 }
+/* color blanco, text decoration(sin la raya abajo), margin righ(los separa uno del otro) y el font mas ligero */
 
-header .textos-menu{
+nav > a:hover{
+    text-decoration: underline;
+}
+/* al tocar se subraya lo que selecionamos */
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* la posicion del baner curvo */
+
+header .textos-header{
     display: flex;
     height: 430px;
     width: 100%;
@@ -45,57 +65,19 @@ header .textos-menu{
     text-align: center;
 }
 
-.textos-menu h1{
-    font-size: 120px;
-    color:#fff;
-    padding-top: 200px;
+/* posicion texto menu */
+
+.textos-header h1{
+    font-size: 100px;
+    color: #fff;
 }
 
-.textos-menu h2{
-    font-size: 15px;
-    font-weight: 300;
-    color:#fff;
-}
+/* tamaño y color primer menu */
 
-.textos-menu h3{
-    font-size: 15px;
-    font-weight: 300;
-    color:#fff;
-}
-
-.colorfondo{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.servicio-cont{ 
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.centrado{
-    width: 28%;
-    text-align: center;
-}
-
-.centrado img{
-    width: 90%;
-}
-
-.titulo {
-    color: #642a73;
+.textos-header h2{
     font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
+    font-weight: 300;
+    color: #fff;
 }
+
+/* ltamaño y color submenu */
