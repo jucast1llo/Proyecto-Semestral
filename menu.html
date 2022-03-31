@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pelislandia</title> 
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pelislandia</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon"> <!-- Este link sirve para insertar el icono en la pagina -->
+    <link rel="stylesheet" href="css/estilos.css"> <!-- aqui linkeamos la ubicacion de los css -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">  <!-- insertamos una fuente -->
 </head>
-
 <body>
     <header>
-        <nav>
-            <a href="menu.html"> Inicio </a>
-            <a href="Drama.html"> Drama </a>
-            <a href="Accion.html"> Accion </a>
-            <a href="Terror.html"> Terror </a>
+        <nav> <!-- en los nav utilizamos los href para direccionar las subpaginas  -->
+            <a href="menu.html">Inicio</a>  
+            <a href="accion.html">Accion</a>
+            <a href="drama.html">Drama</a>
+            <a href="terror.html">Terror</a>
         </nav>
-        <section class="textos-menu">
-            <h1> Bienvenidos a Pelislandia </h1>
-        </section>
+        <section class="textos-menu"> <!-- la seccion sirve para determinar el contenido, esta debajo del encabezado  -->
+            <h1>Bienvenido a Pelislandia</h1> <!--a cada titulo le insertamos el encabezado h1 h2 h3 con su correspondiente css -->
+        </section> <!-- En esta seccion utilizamos un codigo externo generado por web que degrada el color de fondo  -->
+        <div class="colorfondo" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" 
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
     </header>
-
 </body>
-
 </html>
