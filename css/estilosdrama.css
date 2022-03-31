@@ -29,7 +29,7 @@ nav{
  /* esta etiqueta nav sirve para el uso externo de enlaces*/
 
 nav > a{
-    color:#fff;
+    color:rgb(17, 2, 2);
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
