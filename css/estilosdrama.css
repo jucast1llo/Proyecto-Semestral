@@ -20,22 +20,27 @@ header {
     position: relative;
 }
 
- /* en header encabezamiento, utilizamos un script degradado de color de fondo, junto con la imagen de portada */
-
+ /* esto mueve el texto superior de los links */
 nav{
     text-align: right;
     padding: 30px 50px 0 0;
 }
- /* esta etiqueta nav sirve para el uso externo de enlaces*/
 
+/* color blanco, text decoration(sin la raya abajo), margin righ(los separa uno del otro) y el font mas ligero */
 nav > a{
-    color:rgb(17, 2, 2);
+    color:#fff;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
 }
 
-header .textos-menu{
+/* al tocar se subraya lo que selecionamos */
+nav > a:hover{
+    text-decoration: underline;
+}
+
+/* posicion texto menu */
+header .textos-header{
     display: flex;
     height: 430px;
     width: 100%;
@@ -45,13 +50,13 @@ header .textos-menu{
     text-align: center;
 }
 
-.textos-menu h1{
-    font-size: 120px;
-    color:#fff;
-    padding-top: 200px;
+/* tamano,color texto menu accion */
+.textos-header h1{
+    font-size: 100px;
+    color: #fff;
 }
 
-.textos-menu h2{
+.textos-header h2{
     font-size: 30px;
     font-weight: 300;
     color:#fff;
