@@ -3,33 +3,74 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pelislandia</title>
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
-    <!-- Este link sirve para insertar el icono en la pagina -->
-    <link rel="stylesheet" href="css/estilocontacto.css"> <!-- aqui linkeamos la ubicacion de los css -->
+    <!-- BOOTSTRAP -->
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon"> <!-- ICONO -->
+    <link rel="stylesheet" href="css/estiloestreno.css"> <!-- CSS -->
 </head>
 
 <body background="https://fondosmil.com/fondo/38469.jpg">
 
-    <nav>
-        <!-- en los nav utilizamos los href para direccionar las subpaginas de pelislandia  -->
-        <a href="menu.html">Inicio</a>
-        <a href="accion.html">Accion</a>
-        <a href="drama.html">Drama</a>
-        <a href="terror.html">Terror</a>
-        <a href="Estrenos.html">Estrenos</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <br><!-- LOGIN -->
+    <div class="container-fluid ">
+        <div class="d-flex justify-content-center">
+            <div class="row">
+                <div class="col-sm-12-md-12-lg-12">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+                        <center>
+                            <h1>
+                                <font color="red"> Pelislandia</font>
+                            </h1>
+                        </center>
+                        <h3 class="card-title pt-2 text-center text-primary text-white">Iniciar Sesión</h3>
+
+                        <div class="card-body">
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Correo Electronico</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Contraseña</label>
+                            </div>
+                            <br>
+                            <div class="d-grid gap-2">
+                                <div class="d-flex justify-content-center">
+                                    <a href="paginadeinicio.html">
+                                        <button class="btn btn-primary button ">Ingresar
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <br>
+    <!--FOOTER-->
     <footer class="bg-dark text-white py-4">
         <div class="container">
             <nav class="row">
                 <!--LOGO-->
                 <a href="#" class="col-lg-3 text-reset d-flex align-items-center">
-                    <p class=""><img src="img/gato.jpg" alt="icono inferior" class="mr-2" width="150"> Cinemark
+                    <p class=""><img src="img/gato.jpg" alt="icono inferior" class="mr-2" width="150"> Pelislandia
                     </p>
                 </a>
                 <!--CONTACTO-->
@@ -44,6 +85,7 @@
                     <li>
                         <p>Todos los dias del año</p>
                     </li>
+
                 </ul>
                 <!--TERMINOS Y CONDICIONES-->
                 <ul class="col-md-8 col-lg-3 list-unstyled">
@@ -76,6 +118,7 @@
             </nav>
         </div>
     </footer>
+    <!--SEPARATE-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
@@ -85,11 +128,6 @@
     <script src="https://kit.fontawesome.com/35113f2a50.js" crossorigin="anonymous"></script>
     <!--NATIVO-->
     <script src="js/scripts.js"></script>
-
-
-
-
-
 </body>
 
 </html>
