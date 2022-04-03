@@ -81,3 +81,11 @@ header .textos-header{
 }
 
 /* ltamaño y color submenu */
+
+.pelicula1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    color: #fff;
+    padding: 60px;
+
+}
