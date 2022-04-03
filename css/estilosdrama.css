@@ -4,23 +4,45 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Times New Roman', Times, serif;
-}
- /* para agregar las fuentes open sans*/
+/* tipo de letra */
+body{
+    font-family:'Times New Roman', Times, serif
+} 
 
+
+/* arriba y abajo una separacion de 60 pixeles y maximo de pixeles 1000, overflow si algo se sale del centro del margen que lo esconda*/
+.contenedor{
+    padding: 60px 0; 
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Titulo menu accion */
+.titulo {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
 header {
     width: 100%;
-    height: 900px;
-    background: #fff;
-    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/drama.jpg);
-    background: linear-gradient(to right, hsla(113, 41%, 28%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/drama.jpg);
+    height: 600px;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(315, 2%, 58%, 0.664)), url(../img/drama.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 2%, 25%, 0.459), hsla(320, 59%, 40%, 0.664)), url(../img/drama.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
 
- /* esto mueve el texto superior de los links */
+/* esto mueve el texto superior de los links */
 nav{
     text-align: right;
     padding: 30px 50px 0 0;
@@ -38,6 +60,8 @@ nav > a{
 nav > a:hover{
     text-decoration: underline;
 }
+
+
 
 /* posicion texto menu */
 header .textos-header{
@@ -62,55 +86,116 @@ header .textos-header{
     color:#fff;
 }
 
-.textos-menu h3{
-    font-size: 15px;
-    font-weight: 300;
-    color:#fff;
-}
 
-.colorfondo{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.servicio-cont{ 
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.centrado{
-    width: 28%;
-    text-align: center;
-}
-
-.centrado img{
-    width: 90%;
-}
-
-.titulo {
-    color: #642a73;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
+/* la posicion del baner curvo */
 .wave{
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Peliculas */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #e901e991;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+}
+<<<<<<< HEAD
 .section{ 
     background-color: #784ebc;
 }
 
+=======
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+}
+>>>>>>> 098f4165b75edc78c4d99945fcb62dc51a95ad67
