@@ -4,17 +4,21 @@
     box-sizing: border-box;
 }
 
+
+/* tipo de letra */
 body{
     font-family:'Times New Roman', Times, serif
-} /* tipo de letra */
+} 
 
+
+/* arriba y abajo una separacion de 60 pixeles y maximo de pixeles 1000, overflow si algo se sale del centro del margen que lo esconda*/
 .contenedor{
     padding: 60px 0; 
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
-}/* arriba y abajo una separacion de 60 pixeles y maximo de pixeles 1000, overflow si algo se sale del centro del margen que lo esconda*/
+}
 
 header {
     width: 100%;
@@ -27,34 +31,41 @@ header {
     position: relative;
 }
 
+/* esto mueve el texto superior de los links */
 nav{
     text-align: right;
     padding: 30px 50px 0 0;
 }
 
-/* esto mueve el texto superior de los links */
 
+
+
+/* color blanco, text decoration(sin la raya abajo), margin righ(los separa uno del otro) y el font mas ligero */
 nav > a{
     color:#fff;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
 }
-/* color blanco, text decoration(sin la raya abajo), margin righ(los separa uno del otro) y el font mas ligero */
 
+
+/* al tocar se subraya lo que selecionamos */
 nav > a:hover{
     text-decoration: underline;
 }
-/* al tocar se subraya lo que selecionamos */
 
+
+
+/* la posicion del baner curvo */
 .wave{
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-/* la posicion del baner curvo */
 
+
+/* posicion texto menu */
 header .textos-header{
     display: flex;
     height: 430px;
@@ -65,19 +76,22 @@ header .textos-header{
     text-align: center;
 }
 
-/* posicion texto menu */
 
+
+/* tamaño y color primer menu */
 .textos-header h1{
     font-size: 100px;
     color: #fff;
 }
 
-/* tamaño y color primer menu */
 
+
+
+/* ltamaño y color submenu */
 .textos-header h2{
     font-size: 30px;
     font-weight: 300;
     color: #fff;
 }
 
-/* ltamaño y color submenu */
+
