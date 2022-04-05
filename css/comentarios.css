@@ -136,3 +136,22 @@ rect{
     background: rgba(167, 34, 51, 0.541); 
     font-weight: bold;
 }
+
+/* esto mueve el texto superior de los links */
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+/* color blanco, text decoration(sin la raya abajo), margin righ(los separa uno del otro) y el font mas ligero */
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* al tocar se subraya lo que selecionamos */
+nav > a:hover{
+    text-decoration: underline;
+}
