@@ -33,7 +33,7 @@
 body{ 
     margin: 0; 
     padding: 0; 
-    background-color; 
+    background-color: #fff;
     font-family: sans-serif; 
     box-sizing: border-box;
 }
