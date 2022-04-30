@@ -27,31 +27,19 @@
                 <form action="index.html" method="POST" name="formulario">  <!-- metodo post por que son datos personales publicos / name variable -->
                     <h1 class="centrado">Registrarse</h1> 
                     <div class="form-group"> <!-- NOMBRE -->
-                        <label> Nombre y Apellido: </label>
+                        <label style="color: white"> Nombre y Apellido: </label>
                         <input name="nombre" type="text" class="form-control"> 
                     </div>
                     <div class="form-group"> <!-- EDAD -->
-                        <label>Edad: </label>
+                        <label style="color: white">Edad: </label>
                         <input name="edad" type="number" class="form-control">  
                     </div>
-                    <div class="form-group"> <!-- RUT -->
-                        <label>Rut: </label>
-                        <input name="rut" type="number" class="form-control">  
-                    </div>
-                    <div class="form-group"> <!-- PASAPORTE -->
-                        <label>Pasaporte:</label>
-                        <br>
-                        <input type="radio" name="Si" value="1">Si
-                        <br>
-                        <input type="radio" name="No" value="2">No
-                        <br> 
-                    </div>
                     <div class="form-group"> <!-- CORREO -->
-                        <label>Correo: </label>
+                        <label style="color: white">Correo: </label>
                         <input name="correo" type="email" class="form-control">
                     </div>
                     <div class="form-group"> <!-- TIPO SEXO -->
-                        <label> Tipo Sexo: </label>
+                        <label style="color: white"> Tipo Sexo: </label>
                         <select name="Tipo Sexo" class="form-control">
                         <optgroup label="Tipo">
                             <option value="1"> 1.Femenino </option>
@@ -60,16 +48,12 @@
                         </optgroup>
                         </select>
                     <div class="form-group">
-                        <label> Cudad: </label>
+                        <label style="color: white"> Cudad: </label>
                         <input name="ciudad" type="text" class="form-control"> 
                     </div>    
                     <div class="form-group"> <!-- TELEFONO -->
-                        <label>Telefono: (936703680)</label>
+                        <label style="color: white">Telefono: (936703680)</label>
                         <input name="telefono" type="number" class="form-control">  
-                    </div>
-                    <div class="form-group"> <!-- COMENTARIOS -->
-                        <label>Escribe tus comentarios aqui: </label> 
-                        <textarea cols="88" rows="5"></textarea>
                     </div>
                     <div class="form-group"> <!-- ENVIAR / BORRAR -->
                         <button type="button" class="form-control">Click Aca Para enviar</button>

@@ -47,14 +47,6 @@ nav > a:hover{
 }
 /* al tocar se subraya lo que selecionamos */
 
-.wave{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-/* la posicion del baner curvo */
-
 header .textos-header{
     display: flex;
     height: 430px;
@@ -73,23 +65,45 @@ header .textos-header{
     color: #fff;
 }
 
-/* tamaño y color primer menu */
 
-.textos-header h2{
-    font-size: 30px;
-    text-align:center;
+
+
+/* footer */
+
+footer{
+    background: #41414100;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
     color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-/* tamaño y color primer menu */
-
-.textos-header h3{
-    font-size: 30px;
-    font-weight: 300;
-    color: #fff;
-}
-/* ltamaño y color submenu */
-.section{ 
-    background-color: #784ebc;
+.content-foo p{
+    color: #ccc;
 }
 
+.titulo-final{
+    text-align: center;
+    font-size: 100px;
+    margin: 20px 0 0 0;
+    color: #ffffff;
+}
