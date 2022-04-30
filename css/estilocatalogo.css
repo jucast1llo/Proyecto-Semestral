@@ -33,9 +33,9 @@ header {
     height: 600px;
     background: #bc4e9c;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(315, 2%, 58%, 0.664)), url(../img/terror.jpg);
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(315, 2%, 58%, 0.664)), url(../img/catalogo/catalogo.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 2%, 25%, 0.459), hsla(345, 78%, 44%, 0.664)), url(../img/terror.jpg);
+    background: linear-gradient(to right, hsla(0, 2%, 25%, 0.459), hsla(244, 44%, 51%, 0.664)), url(../img/catalogo/catalogo.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -109,7 +109,7 @@ header .textos-header{
 }
 
 .cards .card{
-    background: #e90147e1;
+    background: #0124e991;
     display: flex;
     width: 46%;
     height: 200px;
