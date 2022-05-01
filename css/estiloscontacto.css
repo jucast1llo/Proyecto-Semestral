@@ -98,7 +98,8 @@ footer{
 }
 
 .content-foo p{
-    color: #ccc;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
 .titulo-final{
