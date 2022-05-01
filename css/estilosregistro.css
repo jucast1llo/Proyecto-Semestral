@@ -1,33 +1,5 @@
-.centrado{
-    text-align: center;
-    color: #fff;
-    size: 15px;
-}
-
-
-nav{
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-
-/* esto mueve el texto superior de los links */
-
-nav > a{
-    color:#fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
-}
-/* color blanco, text decoration(sin la raya abajo), margin righ(los separa uno del otro) y el font mas ligero */
-
-nav > a:hover{
-    text-decoration: underline;
-}
-/* al tocar se subraya lo que selecionamos */
-
-
 :root {
-    --colorTextos: #49454567;
+    --colorTextos: #d826ba67;
 }
 
 
@@ -40,13 +12,14 @@ nav > a:hover{
 }
 
 body {
-    font-family: 'Roboto';
-    background: #4568DC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B06AB3, #4568DC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 900px;
+    background: #784ebc;
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/catalogo/catalogo.jpg);
+    background: linear-gradient(to right, hsla(113, 41%, 28%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/catalogo/catalogo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
     height: 750px;
     display: flex;
     justify-content: center;
@@ -56,6 +29,7 @@ body {
 h1{
     text-align: center;
     font-weight: 700;
+    color: #5c339e;
 }
 
 form{
@@ -140,7 +114,6 @@ input:focus~.barra::before{
 }
 
 button{
-    font-family: 'roboto';
     background: #4568DC;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
@@ -163,3 +136,23 @@ button{
     }
 }
 
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+/* esto mueve el texto superior de los links */
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+/* color blanco, text decoration(sin la raya abajo), margin righ(los separa uno del otro) y el font mas ligero */
+
+nav > a:hover{
+    text-decoration: underline;
+}
+/* al tocar se subraya lo que selecionamos */
