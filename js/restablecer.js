@@ -1,5 +1,4 @@
 const nombre = document.getElementById("name")
-const email = document.getElementById("email")
 const pass = document.getElementById("password")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
@@ -12,10 +11,6 @@ form.addEventListener("submit", e=>{
     parrafo.innerHTML = ""
     if(nombre.value.length <6){
         warnings += ` - El nombre no es valido, debe ser mayor o igual a 6 caracteres. <br>`
-        entrar = true
-    }
-    if(!regexEmail.test(email.value)){
-        warnings += ` - El email no es valido <br>`
         entrar = true
     }
     if(pass.value.length < 8){
