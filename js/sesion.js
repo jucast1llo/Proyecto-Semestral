@@ -14,10 +14,11 @@ form.addEventListener("submit", e=>{
         warnings += ` - El nombre no es valido, debe ser mayor o igual a 6 caracteres. <br>`
         entrar = true
     }
-    if(!regexEmail.test(email.value)){
-        warnings += ` - El email no es valido <br>`
+    if(pass.value.length < 8){
+        warnings += ` - La contraseña no es valida, debe ser mayor o igual a 8 caracteres. <br>`
         entrar = true
     }
+
     if(entrar){
         parrafo.innerHTML = warnings
     }else{
