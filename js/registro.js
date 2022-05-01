@@ -15,7 +15,7 @@ form.addEventListener("submit", e=>{
         entrar = true
     }
     if(!regexEmail.test(email.value)){
-        warnings += ` - El email no es valido <br>`
+        warnings += ` - El email no es valido. <br>`
         entrar = true
     }
     if(pass.value.length < 8){
