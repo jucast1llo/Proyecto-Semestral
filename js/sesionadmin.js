@@ -27,6 +27,6 @@ form.addEventListener("submit", e=>{ //FUNCION PARA ESCUCHAR EL EVENTO SUBMIT, F
         parrafo.innerHTML = warnings
     }else{
         parrafo.innerHTML = "Correcto, entrando en 3 segundos..."
-        setTimeout( function() { window.location.href = "peliculas.html"; }, 3000 );  // CODIFO PARA DIRECCIONAR EN TIEMPO ESTA A 3000MILISEGUNDOS QUE SON 3 SG
+        setTimeout( function() { window.location.href = "Admin.html"; }, 3000 );
     }
 })
