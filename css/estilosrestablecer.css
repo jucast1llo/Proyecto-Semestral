@@ -112,6 +112,7 @@ input:focus~.barra::before{
     color: #B06AB3;
     padding-top: 20px;
 }
+/* clase advertencia */
 
 button{
     background: #4568DC;
@@ -129,6 +130,7 @@ button{
     font-size: 16px;
     cursor: pointer;
 }
+/* colores y diseño boton*/
 
 @media screen and (max-width:500px){
     form{
