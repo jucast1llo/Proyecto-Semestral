@@ -143,3 +143,23 @@
     opacity: 1;
   
   }
+
+  nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+/* esto mueve el texto superior de los links */
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+/* color blanco, text decoration(sin la raya abajo), margin righ(los separa uno del otro) y el font mas ligero */
+
+nav > a:hover{
+    text-decoration: underline;
+}
+/* al tocar se subraya lo que selecionamos */
