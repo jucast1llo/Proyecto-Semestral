@@ -153,3 +153,5 @@ def registro(request):
             return redirect(to="home")
         data["form"] = formulario 
     return render(request, 'registration/registro.html', data)
+
+
