@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif
+} /* tipo de letra */
+
+.contenedor{
+    padding: 60px 0; 
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}/* arriba y abajo una separacion de 60 pixeles y maximo de pixeles 1000, overflow si algo se sale del centro del margen que lo esconda*/
+
+header {
+    width: 100%;
+    height: 900px;
+    background: #784ebc;
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/catalogo/catalogo.jpg);
+    background: linear-gradient(to right, hsla(113, 41%, 28%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/catalogo/catalogo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+/* esto mueve el texto superior de los links */
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+/* color blanco, text decoration(sin la raya abajo), margin righ(los separa uno del otro) y el font mas ligero */
+
+nav > a:hover{
+    text-decoration: underline;
+}
+/* al tocar se subraya lo que selecionamos */
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* posicion texto menu */
+
+.textos-header h1{
+    font-size: 100px;
+    text-align:center;
+    color: #fff;
+}
+
+
+
+
+/* footer */
+
+footer{
+    background: #41414100;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 100px;
+    margin: 20px 0 0 0;
+    color: #ffffff;
+}
