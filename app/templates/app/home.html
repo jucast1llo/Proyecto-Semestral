@@ -1,7 +1,7 @@
 {% extends 'app/base.html' %}
 {% load static %}
 {% block js %}
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> <!-- SLIDER (CARRUCEL)-->
 <script>
     $(document).ready(function() {
       $('.slider').bxSlider({
@@ -20,17 +20,17 @@
 <div class="slider">
     <br>
     <div>
-        <img src="{% static 'app/img/banner/portada1.png' %}" alt="">
+        <img src="{% static 'app/img/banner/portada1.png' %}" alt=""> <!-- IMG SLIDER 1 -->
     </div>
     <div>
-        <img src="{% static 'app/img/banner/portada2.png' %}" alt="">
+        <img src="{% static 'app/img/banner/portada2.png' %}" alt=""> <!-- IMG SLIDER 2 -->
     </div>
     <div>
-        <img src="{% static 'app/img/banner/portada3.png' %}" alt="">
+        <img src="{% static 'app/img/banner/portada3.png' %}" alt=""> <!-- IMG SLIDER 3 -->
     </div>
 </div>
 {% load humanize %}
-<h2 class="nuestragaleria"> Nuestra Galeria </h2>
+<h2 class="nuestragaleria"> Nuestra Galeria </h2> <!-- MOSTRAR LISTA DE PELICULAS -->
 <div class="productos">
     {% for p in productos %}
     <div class="producto">

@@ -5,16 +5,18 @@ from pyexpat import model
 from django.db import models
 from django.forms import CharField
 
-# Create your models here. #
+########## MODELOS/CLASES PELISLANDIA ##########
+
+# CLASE PELICULA #
 class Pelicula(models.Model):
     nombre = models.CharField(max_length=15)
 
     def __str__(self):
         return self.nombre
 
-# FORMULARIO DE AGREGAR PELICULAS #
+# CLASE PELICULA/ATRIBUTOS #
 class PeliculaProducto (models.Model):
-    nombre = models.CharField(max_length=15)
+    nombre = models.CharField(max_length=50)
     codigo = models.IntegerField()
     descripcion = models.TextField()
     genero = models.ForeignKey(Pelicula, on_delete=models.PROTECT)
@@ -24,17 +26,19 @@ class PeliculaProducto (models.Model):
     def __str__(self):
         return self.nombre
 
-# CONSULTAS CONTACTO #
+# OPCIONES DE CONTACTO #
 opciones_consultas = [
     [0, "Consulta"],
     [1, "Reclamo"],
     [2, "Sugerencia"],
-    [3, "Felicitaciones"]
+    [3, "Recuperacion"],
+    [4, "Agradecimientos"],
 ]        
 
-# FORMULARIO DE CONTACTO #
+
+# CLASE CONTACTO/ATRIBUTOS #
 class Contacto(models.Model):
-    nombrecontacto = models.CharField(max_length=50)
+    nombre = models.CharField(max_length=50)
     correo = models.EmailField()
     tipo_consulta = models.IntegerField(choices=opciones_consultas)
     mensaje = models.TextField()

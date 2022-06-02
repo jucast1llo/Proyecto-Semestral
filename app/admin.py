@@ -7,7 +7,7 @@ class PeliculaProductoEdit(admin.ModelAdmin):
     list_filter = ["codigo"]
 
 class ContactoProductoEdit(admin.ModelAdmin):
-    list_display = ["nombrecontacto","correo","tipo_consulta","mensaje"]
+    list_display = ["nombre","correo","tipo_consulta","mensaje"]
 
 # Register your models here.
 admin.site.register(Pelicula)

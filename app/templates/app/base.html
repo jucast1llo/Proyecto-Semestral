@@ -20,7 +20,7 @@
             <img class="logo"  src="{% static 'app/img/pelislandia.png' %}"  alt="logo">
         </div>
         <div>
-            <nav id="nav">
+            <nav id="nav"> <!-- BARRA SUPERIOR -->
                 <ul>
                     <li><a href="{% url 'home' %}"> INICIO </a></li>
                     <li><a href="{% url 'contacto' %}">CONTACTO</a></li>
@@ -52,13 +52,13 @@
         {% block contenido %}
         {% endblock %}
             </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
     <script src="js/menu.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>  <!-- JS DE CADRO DE AVISO -->
     {% if messages %}
         {% for m in messages %}
-        <script>
-            Swal.fire({
+        <script> 
+            Swal.fire({    <!-- MENSAJES DE CUADRO DE AVISO -->
                 "title":"Cambios Guardados",
                 "text": "{{m}}",
                 "icon":"success"
@@ -70,3 +70,5 @@
     {% endblock %}
 </body>
 </html>
+
+<!-- Pelislandia Bye Juan Castillo, Cynthia Betancourt, Javiera Barraza - 2022 DUOC -->
