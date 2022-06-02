@@ -166,6 +166,25 @@ def eliminar_comentario(request, id):
     producto.delete()
     return redirect(to="listacontacto")
 
+<<<<<<< HEAD
 
 #########################################
 
+=======
+# REGISTRO #
+def registro(request):
+    data = { 
+        'form': CustomUserCreation()
+    }
+
+    if request.method == 'POST':
+        formulario = CustomUserCreation(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
+            login(request, user)
+            messages.success(request, "Registracion Exitosa, Bienvenido")
+            return redirect(to="home")
+        data["form"] = formulario 
+    return render(request, 'registration/registro.html', data)
+>>>>>>> parent of b982014 (3.1)

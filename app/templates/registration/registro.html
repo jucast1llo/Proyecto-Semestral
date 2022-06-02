@@ -20,10 +20,9 @@
                         <form action="" method="POST">
                             {% csrf_token %}
                             {{ form | crispy }}
-                            <a href="{% url 'home' %}"> Inicio </a>
-                            <a href="{% url 'contacto' %}"> Contacto </a>
-                            <a href="{% url 'login' %}"> Iniciar </a>
-                            <input type="submit" value="Registrar"  class="btn btn-success float-right" >
+                            <A href="{% url 'home' %}"> Ir a inicio </a>
+                            <A href="{% url 'login' %}"> Iniciar Sesion </a>
+                            <input type="submit" value="Registrar" class="btn btn-success float-right" >
                         </form>
                 </div>
             </div>
