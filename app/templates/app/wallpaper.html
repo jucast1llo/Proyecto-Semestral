@@ -1,0 +1,25 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block js %}
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+{% endblock %}
+{% block contenido %}
+<br><br>
+<h2 class="wallpaper">WALLPAPERS</h2>
+<br><br>
+<div class="galeria">
+     <a data-fancybox="gallery" href="{% static 'app/img/wallpaper/fondo1.jpg' %}"><img src="{% static 'app/img/wallpaper/fondo1.jpg' %}"></a>
+     <a data-fancybox="gallery" href="{% static 'app/img/wallpaper/fondo2.jpg' %}"><img src="{% static 'app/img/wallpaper/fondo2.jpg' %}"></a>
+     <a data-fancybox="gallery" href="{% static 'app/img/wallpaper/fondo3.jpg' %}"><img src="{% static 'app/img/wallpaper/fondo3.jpg' %}"></a>
+     <a data-fancybox="gallery" href="{% static 'app/img/wallpaper/fondo4.jpg' %}"><img src="{% static 'app/img/wallpaper/fondo4.jpg' %}"></a> 
+     <a data-fancybox="gallery" href="{% static 'app/img/wallpaper/fondo5.jpg' %}"><img src="{% static 'app/img/wallpaper/fondo5.jpg' %}"></a> 
+     <a data-fancybox="gallery" href="{% static 'app/img/wallpaper/fondo6.jpg' %}"><img src="{% static 'app/img/wallpaper/fondo6.jpg' %}"></a> 
+     <a data-fancybox="gallery" href="{% static 'app/img/wallpaper/fondo7.jpg' %}"><img src="{% static 'app/img/wallpaper/fondo7.jpg' %}"></a> 
+     <a data-fancybox="gallery" href="{% static 'app/img/wallpaper/fondo8.jpg' %}"><img src="{% static 'app/img/wallpaper/fondo8.jpg' %}"></a> 
+     <br><br>
+</div>
+<br><br>
+{% endblock %}
