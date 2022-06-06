@@ -39,26 +39,6 @@ header > div {
     margin-left: 20px;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;/*flex-start - center - flex-end*/ /*horizontal*/
-    align-items: center;
-    height: 100%;
-}
-
-nav > ul {
-    margin-right: 50px;
-}
-
-nav > ul > li {
-    display: inline;
-    margin-left: 10px;
-}
-
-nav a {
-    color:white;
-    text-decoration: none;
-}
 
 .galeria {
     display: grid;
