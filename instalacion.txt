@@ -7,10 +7,16 @@
  pip manage.py runserver
 
 
+
+
 /// CUENTA DE AMDINISTRADOR ///
 
  Administrador: admin/admin
  Developer: admin/1234
+
+
+
+
 
 
  ---------- DEVELOPER ----------
@@ -19,8 +25,8 @@ create user admin identified by 1234;
 grant connect, resource to admin;
 alter user admin default tablespace users quota unlimited on users;
 
----- MOSTRAR MENSAJERIA -----
+---- MOSTRAR MENSAJERIA SQL -----
 select * from  app_contacto;
 
----- MOSTRAR PELICULAS -----
+---- MOSTRAR PELICULAS SQL -----
 select * from  app_peliculaproducto;
