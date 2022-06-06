@@ -1,6 +1,0 @@
- Se debe intalar los plugins antes de ejecutar el servidor, pasos:
- 
- pip install -r requirements.txtc
- pip manage.py runserver
-
- ADMINISTRADOR: admin/admin
