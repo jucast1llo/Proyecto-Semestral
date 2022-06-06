@@ -128,6 +128,7 @@ def modificar_producto(request, id):
 def eliminar_producto(request, id):
     producto = get_object_or_404(PeliculaProducto, id=id)
     producto.delete()
+    messages.success(request, "Eliminacion Exitosa")
     return redirect(to="listar_productos")
 
 # ELIMINAR COMENTARIO #
@@ -135,6 +136,7 @@ def eliminar_producto(request, id):
 def eliminar_comentario(request, id):
     producto = get_object_or_404(Contacto, id=id)
     producto.delete()
+    messages.success(request, "Mensaje Eliminado")
     return redirect(to="listacontacto")
 
 # REGISTRO #
