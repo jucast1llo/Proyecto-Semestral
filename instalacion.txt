@@ -1,0 +1,15 @@
+ Se debe intalar los plugins antes de ejecutar el servidor, pasos:
+ 
+ pip install -r requirements.txtc
+ pip manage.py runserver
+
+
+ Administrador: admin/admin
+ Developer: admin/1234
+
+
+ --------------------------
+alter session set"_ORACLE_SCRIPT"=True;
+create user admin identified by 1234;
+grant connect, resource to admin;
+alter user admin default tablespace users quota unlimited on u
