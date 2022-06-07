@@ -4,7 +4,7 @@ from urllib import request
 from django.http import Http404
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import PeliculaProducto, Contacto
-from .forms import ContactoForm, ProductoForm, CustomUserCreation
+from .forms import ContactoForm, ProductoForm, CustomUserCreation, User
 from django.core.paginator import Paginator
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required, permission_required
@@ -155,3 +155,21 @@ def registro(request):
             return redirect(to="home")
         data["form"] = formulario 
     return render(request, 'registration/registro.html', data)
+
+
+# LISTAR USUARIOS #
+@permission_required('app.view_producto')
+def listausuario(request):
+    productos = User.objects.all()
+    page = request.GET.get('page',1)
+    try:
+        paginator = Paginator(productos, 3)
+        productos = paginator.page(page)
+    except:
+        raise Http404
+
+    data = { 
+        'entity': productos,
+        'paginator': paginator
+    }
+    return render(request, 'app/producto/listausuario.html', data)

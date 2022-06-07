@@ -34,6 +34,9 @@
                     <li><b><a href="{% url 'listar_productos' %}">LISTA</a></li></b>
                     {% endif %} <!-- PARA VER ADMIN  CERRADO-->
                     {% if perms.app.view_producto %}  <!-- PARA VER ADMIN -->
+                    <li><b><a href="{% url 'listausuario' %}">USUARIOS</a></li></b>
+                    {% endif %} <!-- PARA VER ADMIN  CERRADO-->
+                    {% if perms.app.view_producto %}  <!-- PARA VER ADMIN -->
                     <li><b><a href="{% url 'listacontacto' %}"> MENSAJES</a></li></b>
                     {% endif %} <!-- PARA VER ADMIN  CERRADO-->
                     {% if perms.app.add_producto %} <!-- PARA VER ADMIN -->
