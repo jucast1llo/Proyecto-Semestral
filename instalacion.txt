@@ -1,10 +1,15 @@
- 1) Se debe intalar los plugins antes de ejecutar el servidor.
+ Para poder correr esta pagina se deben realizar los siguentes pasos.
 
- pip install -r plugins.txt
+1) INSTALAR DJANGO PILLOW CMD EN MODO ADMINISTRADOR
+2) CREAR EL USUARIO EN SQL PLUS (están mas abajo los pasos admin/1234)
+3) ABRIR Y EJECUTAR PLUGINS DEL PROYECTO VSCODE (están abajo los pasos)
+4) ABRIR DEVELOPER CON EL USUARIO CREADO
+5) ABRIR VISUAL EN EN MODO ADMINISTRADOR MIGRAR PROYECTO CON EL NUEVO USUARIO
+5) UNA VEZ MIGRADO, CREAR SUPER USUARIO EN VISUAL  admin/1234
+6) EJECUTAR SCRIPT ( ejecutarlo 3 veces, para que carge bien )
+7) RUNSERVER
+ 
 
- 2) Ejecutar Servidor Pelislandoa
-
- pip manage.py runserver
 
 
 
@@ -17,16 +22,16 @@
 
 
 
-
-
- ---------- DEVELOPER ----------
+ ---------- DEVELOPER ---------- 
+          CREAR USUARIO 
 alter session set"_ORACLE_SCRIPT"=True;
 create user admin identified by 1234;
 grant connect, resource to admin;
 alter user admin default tablespace users quota unlimited on users;
 
----- MOSTRAR MENSAJERIA SQL -----
-select * from  app_contacto;
+__________________________________
 
----- MOSTRAR PELICULAS SQL -----
-select * from  app_peliculaproducto;
+COMO INSTALAR PLUGINS DEL ARCHIVO TXT? (EJECUTAR EN TERMINAL VISUAL)
+
+ pip install -r plugins.txt
+
