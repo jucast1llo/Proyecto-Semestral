@@ -1,5 +1,10 @@
-from django.urls import path
-from .views import home, contacto, galeria, wallpaper, listausuario, agregar_producto, listar_productos, listacontacto, modificar_producto, eliminar_producto, registro, eliminar_comentario
+from django.db import router
+from django.urls import path, include
+from .views import home, ProductoViewset, contacto, galeria, wallpaper, listausuario, agregar_producto, listar_productos, listacontacto, modificar_producto, eliminar_producto, registro, eliminar_comentario
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register('PeliculaProducto', ProductoViewset)
 
 urlpatterns = [
     path('', home,  name="home"),
@@ -14,4 +19,5 @@ urlpatterns = [
     path('eliminarcom/<id>/', eliminar_comentario,  name="eliminar_comentario"),
     path('registro/', registro,  name="registro"),
     path('listausuario/', listausuario,  name="listausuario"),
+    path('api/', include(router.urls)),
 ]
