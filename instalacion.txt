@@ -30,7 +30,11 @@ grant connect, resource to admin;
 alter user admin default tablespace users quota unlimited on users;
 
 __________________________________
+          BORRAR USUARIO 
+alter session set"_ORACLE_SCRIPT"=True;
+drop user admin cascade;
 
+_______________________________________
 COMO INSTALAR PLUGINS DEL ARCHIVO TXT? (EJECUTAR EN TERMINAL VISUAL)
 
  pip install -r plugins.txt
