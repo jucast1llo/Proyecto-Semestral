@@ -15,7 +15,7 @@ class Pelicula(models.Model):
 # FORMULARIO DE AGREGAR PELICULAS #
 class PeliculaProducto (models.Model):
     nombre = models.CharField(max_length=15)
-    codigo = models.IntegerField()
+    codigo = models.IntegerField(primary_key=True)
     descripcion = models.TextField()
     genero = models.ForeignKey(Pelicula, on_delete=models.PROTECT)
     imagen = models.ImageField(upload_to="peliculas", null=True)
