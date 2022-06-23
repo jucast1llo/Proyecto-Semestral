@@ -39,3 +39,9 @@ COMO INSTALAR PLUGINS DEL ARCHIVO TXT? (EJECUTAR EN TERMINAL VISUAL)
 
  pip install -r plugins.txt
 
+
+
+_______ API _______
+GET POST : http://127.0.0.1:8000/api/lista_peliculas
+
+PUT DELETE GET : http://127.0.0.1:8000/api/Elimpelicula/id
