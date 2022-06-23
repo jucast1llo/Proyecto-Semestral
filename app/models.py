@@ -24,6 +24,31 @@ class PeliculaProducto (models.Model):
     def __str__(self):
         return self.nombre
 
+# FORMULARIO DE AGREGAR PELICULAS #
+class DescripcionProducto (models.Model):
+    idioma = models.CharField(max_length=15)
+    codigo = models.IntegerField()
+    anio = models.IntegerField()
+    genero = models.ForeignKey(Pelicula, on_delete=models.PROTECT)
+
+
+    def __str__(self):
+        return self.nombre
+
+
+# FORMULARIO DE AGREGAR PELICULAS #
+class AutorProducto (models.Model):
+    nombre = models.CharField(max_length=15)
+    codigo = models.IntegerField()
+    edad = models.IntegerField()
+
+
+    def __str__(self):
+        return self.nombre
+
+
+
+
 # CONSULTAS CONTACTO #
 opciones_consultas = [
     [0, "Consultas"],
