@@ -5,14 +5,14 @@ from pyexpat import model
 from django.db import models
 from django.forms import CharField
 
-# Create your models here. #
+# MODELO GENERO PELICULA #
 class Pelicula(models.Model):
     nombre = models.CharField(max_length=15)
 
     def __str__(self):
         return self.nombre
 
-# FORMULARIO DE AGREGAR PELICULAS #
+# MODELO PELICULA #
 class PeliculaProducto (models.Model):
     nombre = models.CharField(max_length=15)
     codigo = models.IntegerField()
@@ -24,7 +24,7 @@ class PeliculaProducto (models.Model):
     def __str__(self):
         return self.nombre
 
-# FORMULARIO DE AGREGAR PELICULAS #
+# MODELO DESCRIPCION #
 class DescripcionProducto (models.Model):
     idioma = models.CharField(max_length=15)
     codigo = models.IntegerField()
@@ -35,8 +35,7 @@ class DescripcionProducto (models.Model):
     def __str__(self):
         return self.nombre
 
-
-# FORMULARIO DE AGREGAR PELICULAS #
+# MODELO AUTOR #
 class AutorProducto (models.Model):
     nombre = models.CharField(max_length=15)
     codigo = models.IntegerField()
@@ -46,9 +45,6 @@ class AutorProducto (models.Model):
     def __str__(self):
         return self.nombre
 
-
-
-
 # CONSULTAS CONTACTO #
 opciones_consultas = [
     [0, "Consultas"],
@@ -57,7 +53,7 @@ opciones_consultas = [
     [3, "Agradecimientos"]
 ]        
 
-# FORMULARIO DE CONTACTO #
+# MODELO CONTACTO #
 class Contacto(models.Model):
     nombre = models.CharField(max_length=50)
     correo = models.EmailField()
@@ -67,4 +63,3 @@ class Contacto(models.Model):
     
     def __str__(self):
         return self.nombre
-

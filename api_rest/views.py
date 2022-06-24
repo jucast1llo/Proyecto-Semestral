@@ -6,11 +6,13 @@ from rest_framework.parsers import JSONParser
 from django.views.decorators.csrf import csrf_exempt
 from app.models import PeliculaProducto, DescripcionProducto, AutorProducto
 from .serializers import PeliculaSerializers,PeliculaSerializers2, DescripcionSerializers, DescripcionSerializers2, DirectorSerializers, DirectorSerializers2
-# Create your views here.
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
-# Create your views here.
 
+
+#### VISTA API PELICULA GET, POST, PUT, DELETE ####
+
+# LISTA PELICULAS #
 @csrf_exempt
 @api_view(['GET','POST'])
 @permission_classes((IsAuthenticated,))
@@ -28,6 +30,7 @@ def lista_peliculas(request):
         else:
             return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
 
+# AGREGAR PELICULAS #
 @api_view(['POST'])
 @permission_classes((IsAuthenticated,))
 def agregar_pelicula(request):
@@ -39,19 +42,17 @@ def agregar_pelicula(request):
     else:
         return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
 
-
+# EIMINAR PELICULAS #
 @api_view(['GET','PUT','DELETE'])
 @permission_classes((IsAuthenticated,))
 def Elimpelicula(request,codigo):
     try:
         m = PeliculaProducto.objects.get(codigo = codigo)
     except PeliculaProducto.DoesNotExist:
-        return Response(status = status.HTTP_404_NOT_FOUND)
-    
+        return Response(status = status.HTTP_404_NOT_FOUND)   
     if request.method == 'GET':
         serializer = PeliculaSerializers2(m)
         return Response(serializer.data)
-
     elif request.method == 'PUT':
         data = JSONParser().parse(request)
         serializer = PeliculaSerializers2(m,data = data)
@@ -59,15 +60,15 @@ def Elimpelicula(request,codigo):
             serializer.save()
             return Response(serializer.data)
         else:
-            return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
-        
+            return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)     
     elif request.method == 'DELETE':
         m.delete()
         return Response(status = status.HTTP_204_NO_CONTENT)
         
     
-####################################################################################################################################
+#### VISTA API DESCRIPCION GET, POST, PUT, DELETE ####
 
+# LISTA DESCRIPCION #
 @csrf_exempt
 @api_view(['GET','POST'])
 @permission_classes((IsAuthenticated,))
@@ -85,6 +86,7 @@ def lista_descripcion(request):
         else:
             return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
 
+# AGREGAR DESCRIPCION #
 @api_view(['POST'])
 @permission_classes((IsAuthenticated,))
 def agregar_descripcion(request):
@@ -96,19 +98,17 @@ def agregar_descripcion(request):
     else:
         return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
 
-
+# ELIMINAR DESCRIPCION #
 @api_view(['GET','PUT','DELETE'])
 @permission_classes((IsAuthenticated,))
 def Elimdescripcion(request,codigo):
     try:
         m = DescripcionProducto.objects.get(codigo = codigo)
     except DescripcionProducto.DoesNotExist:
-        return Response(status = status.HTTP_404_NOT_FOUND)
-    
+        return Response(status = status.HTTP_404_NOT_FOUND)  
     if request.method == 'GET':
         serializer = DescripcionSerializers(m)
         return Response(serializer.data)
-
     elif request.method == 'PUT':
         data = JSONParser().parse(request)
         serializer = DescripcionSerializers2(m,data = data)
@@ -117,15 +117,14 @@ def Elimdescripcion(request,codigo):
             return Response(serializer.data)
         else:
             return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
-        
     elif request.method == 'DELETE':
         m.delete()
         return Response(status = status.HTTP_204_NO_CONTENT)
         
-####################################################################################################################################
-    
 
+#### VISTA API AUTOR GET, POST, PUT, DELETE ####
 
+# LISTA AUTOR #
 @csrf_exempt
 @api_view(['GET','POST'])
 @permission_classes((IsAuthenticated,))
@@ -143,6 +142,7 @@ def lista_autor(request):
         else:
             return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
 
+# AGREGAR AUTOR #
 @api_view(['POST'])
 @permission_classes((IsAuthenticated,))
 def agregar_autor(request):
@@ -154,19 +154,17 @@ def agregar_autor(request):
     else:
         return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
 
-
+# ELIMINAR AUTOR #
 @api_view(['GET','PUT','DELETE'])
 @permission_classes((IsAuthenticated,))
 def Elimautor(request,codigo):
     try:
         m = AutorProducto.objects.get(codigo = codigo)
     except AutorProducto.DoesNotExist:
-        return Response(status = status.HTTP_404_NOT_FOUND)
-    
+        return Response(status = status.HTTP_404_NOT_FOUND)   
     if request.method == 'GET':
         serializer = DirectorSerializers2(m)
         return Response(serializer.data)
-
     elif request.method == 'PUT':
         data = JSONParser().parse(request)
         serializer = DirectorSerializers2(m,data = data)
@@ -174,9 +172,7 @@ def Elimautor(request,codigo):
             serializer.save()
             return Response(serializer.data)
         else:
-            return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
-        
+            return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)      
     elif request.method == 'DELETE':
         m.delete()
         return Response(status = status.HTTP_204_NO_CONTENT)
-        
